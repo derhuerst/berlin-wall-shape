@@ -6,8 +6,8 @@ const getFeatures = require('query-fis-broker-wfs/get-features')
 const simplify = require('@turf/simplify')
 const truncate = require('@turf/truncate')
 
-const endpoint = 'http://fbinter.stadt-berlin.de/fb/wfs/geometry/senstadt/re_hinterl4326/'
-const layer = 'fis:re_hinterl4326'
+const endpoint = 'http://fbinter.stadt-berlin.de/fb/wfs/geometry/senstadt/re_vorderl4326/'
+const layer = 'fis:re_vorderl4326'
 
 const parseResult = (r) => {
 	const id = attrOf(r, 'gml:id')
