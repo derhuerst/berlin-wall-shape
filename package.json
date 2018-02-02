@@ -23,9 +23,12 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
+		"@turf/simplify": "^5.1.5",
+		"parse-gml-polygon": "^0.2.1",
+		"query-fis-broker-wfs": "^0.1.0"
 	},
 	"scripts": {
-		"build": "echo todo; exit 1",
+		"build": "env NODE_ENV=dev node build.js >index.geo.json",
 		"test": "echo todo; exit 1",
 		"prepublishOnly": "npm run build && npm test"
 	}
