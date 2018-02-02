@@ -1,5 +1,7 @@
 # berlin-wall-shape
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/berlin-wall-shape.svg)](https://greenkeeper.io/)
+
 **The [Berlin Wall (Berliner Mauer)](https://en.wikipedia.org/wiki/Berlin_Wall) as GeoJSON.** Taken [from the open data portal of Berlin](https://daten.berlin.de/datensaetze/verlauf-der-berliner-mauer-1989-hinterlandmauer-wfs).
 
 [see a live map](https://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=k_mauer@senstadt&bbox=18997,17259,31668,24771)
