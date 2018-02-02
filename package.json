@@ -1,0 +1,32 @@
+{
+	"name": "berlin-wall-shape",
+	"description": "The Berlin Wall (Berliner Mauer) as GeoJSON.",
+	"version": "1.0.0",
+	"main": "index.geo.json",
+	"files": [
+		"index.geo.json"
+	],
+	"keywords": [
+		"berlin",
+		"wall",
+		"berliner mauer",
+		"shape",
+		"geojson"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/berlin-wall-shape",
+	"repository": "derhuerst/berlin-wall-shape",
+	"bugs": "https://github.com/derhuerst/berlin-wall-shape/issues",
+	"license": "GeoNutzV-Berlin",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {},
+	"devDependencies": {
+	},
+	"scripts": {
+		"build": "echo todo; exit 1",
+		"test": "echo todo; exit 1",
+		"prepublishOnly": "npm run build && npm test"
+	}
+}
