@@ -1,5 +1,7 @@
 # berlin-wall-shape
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/berlin-wall-shape.svg)](https://greenkeeper.io/)
+
 **The [Berlin Wall (Berliner Mauer)](https://en.wikipedia.org/wiki/Berlin_Wall) as GeoJSON.** Taken [from the open data portal of Berlin](https://daten.berlin.de/datensaetze/verlauf-der-berliner-mauer-1989-hinterlandmauer-wfs).
 
 [![npm version](https://img.shields.io/npm/v/berlin-wall-shape.svg)](https://www.npmjs.com/package/berlin-wall-shape)
