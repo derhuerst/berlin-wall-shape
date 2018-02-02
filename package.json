@@ -23,13 +23,14 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
+		"@mapbox/geojsonhint": "github:derhuerst/geojsonhint#exit-1",
 		"@turf/simplify": "^5.1.5",
 		"parse-gml-polygon": "^0.2.1",
 		"query-fis-broker-wfs": "^0.1.0"
 	},
 	"scripts": {
 		"build": "env NODE_ENV=dev node build.js >index.geo.json",
-		"test": "echo todo; exit 1",
+		"test": "geojsonhint index.geo.json",
 		"prepublishOnly": "npm run build && npm test"
 	}
 }

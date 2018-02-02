@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+node_js:
+  - 'stable'
+script:
+  - npm run build
+  - npm test
+before_deploy:
+  - ls -lh index.geo.json
+  - npm i --no-save semver
+  - npm version --no-git-tag-version --force --allow-same-version $(./node_modules/.bin/semver -i minor $(npm info berlin-wall-shape version))
+deploy:
+  provider: npm
+  on:
+    branch: master
+    node: stable
+  email: 'mail@jannisr.de'
+  api_key: ${NPM_TOKEN}
+  skip_cleanup: true
