@@ -1,7 +1,7 @@
 {
 	"name": "berlin-wall-shape",
 	"description": "The Berlin Wall (Berliner Mauer) as GeoJSON.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.geo.json",
 	"files": [
 		"index.geo.json",
