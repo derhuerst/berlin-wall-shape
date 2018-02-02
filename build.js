@@ -4,6 +4,7 @@ const {parseLinearRingOrLineString} = require('parse-gml-polygon')
 const {findIn, attrOf} = require('query-fis-broker-wfs/lib/helpers')
 const getFeatures = require('query-fis-broker-wfs/get-features')
 const simplify = require('@turf/simplify')
+const truncate = require('@turf/truncate')
 
 const endpoint = 'http://fbinter.stadt-berlin.de/fb/wfs/geometry/senstadt/re_hinterl4326/'
 const layer = 'fis:re_hinterl4326'
@@ -47,6 +48,7 @@ getFeatures(endpoint, layer)
 		coordinates: lineStrings
 	}
 	simplify(multiLineString, {tolerance: .00001, highQuality: true, mutate: true})
+	truncate(multiLineString, {precision: 6, coordinates: 2, mutate: true})
 
 	process.stdout.write(JSON.stringify(multiLineString) + '\n')
 })
