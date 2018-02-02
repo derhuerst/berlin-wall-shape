@@ -1,10 +1,12 @@
 # berlin-wall-shape
 
-**The [Berlin Wall (Berliner Mauer)](https://en.wikipedia.org/wiki/Berlin_Wall) as GeoJSON.**
+**The [Berlin Wall (Berliner Mauer)](https://en.wikipedia.org/wiki/Berlin_Wall) as GeoJSON.** Taken [from the open data portal of Berlin](https://daten.berlin.de/datensaetze/verlauf-der-berliner-mauer-1989-hinterlandmauer-wfs).
 
 [![npm version](https://img.shields.io/npm/v/berlin-wall-shape.svg)](https://www.npmjs.com/package/berlin-wall-shape)
 [![build status](https://api.travis-ci.org/derhuerst/berlin-wall-shape.svg?branch=master)](https://travis-ci.org/derhuerst/berlin-wall-shape)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+
+[![a screenshot of a map showing the shape](screenshot.png)](https://bl.ocks.org/d/4480d1e005423fe84529fde08bc52b8d)
 
 
 ## Installing
@@ -21,8 +23,25 @@ const shape = require('berlin-wall-shape')
 console.log(shape)
 ```
 
+`shape` will be a [GeoJSON](http://geojson.org/) [`MultiLineString`](https://tools.ietf.org/html/rfc7946#section-3.1.5).
+
 ```js
-// todo
+{
+	type: 'MultiLineString',
+	coordinates: [
+		[
+			[13.204769, 52.616444],
+			[13.208006, 52.617655],
+			// …
+		],
+		[
+			[13.292293, 52.661454],
+			[13.295914, 52.66113],
+			// …
+		],
+		// …
+	]
+}
 ```
 
 
