@@ -27,7 +27,7 @@
 		"@mapbox/geojsonhint": "github:derhuerst/geojsonhint#exit-1",
 		"@turf/simplify": "^5.1.5",
 		"@turf/truncate": "^5.1.5",
-		"parse-gml-polygon": "^0.2.1",
+		"parse-gml-polygon": "^0.3.0",
 		"query-fis-broker-wfs": "^0.1.0"
 	},
 	"scripts": {
