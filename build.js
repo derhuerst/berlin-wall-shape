@@ -4,7 +4,7 @@ const {parseLinearRingOrLineString} = require('parse-gml-polygon')
 const {findIn, attrOf} = require('query-fis-broker-wfs/lib/helpers')
 const getFeatures = require('query-fis-broker-wfs/get-features')
 const simplify = require('@turf/simplify')
-const truncate = require('@turf/truncate')
+const truncate = require('@turf/truncate').default
 
 const endpoint = 'http://fbinter.stadt-berlin.de/fb/wfs/geometry/senstadt/re_vorderl4326/'
 const layer = 'fis:re_vorderl4326'
